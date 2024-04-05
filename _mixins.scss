@@ -1,0 +1,19 @@
+@mixin step-styles {
+    margin: auto;
+    max-width: 70%;
+  }
+
+  .step {
+    @include step-styles;
+  }
+
+  @mixin floating($radius: 20px, $shadow: 0 10px 20px rgb(0 0 0 /0.1), $border: 1px solid transparent) {
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: $border;
+    cursor: pointer
+  }
+
+  .gallery .img-container {
+    @include floating;
+  }

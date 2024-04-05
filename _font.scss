@@ -1,0 +1,36 @@
+$main-font: "Roboto";
+
+$title-font: "Montserrat";
+
+$alt-font: "Poppins";
+
+$font-sm: 0.75rem;
+$font-regular: 1rem;
+$font-md: 1.50rem;
+$font-lg: 2rem;
+$font-xl: 3rem;
+$font-xxl: 4rem;
+
+$fontW-light: 200;
+$fontW-regular: 400;
+$fontW-bold: 600;
+$fontW-bolder: 800;
+
+body {
+    font-family: $main-font;
+    font-size: $font-regular;
+    font-weight: $fontW-regular;
+}
+
+.title h1 {
+    font-family: $title-font;
+    font-size: $font-xxl;
+    font-weight: $fontW-bold;
+    letter-spacing: -3px;
+}
+.title h3 {
+    font-family: $title-font;
+    font-size: $font-md;
+    font-weight: $fontW-light;
+    text-align: center;
+}

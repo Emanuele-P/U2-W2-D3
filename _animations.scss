@@ -1,0 +1,17 @@
+@mixin slide-animation($from, $to) {
+    @keyframes slide-animation {
+      0% {
+        transform: translate3d($from, 0, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d($to, 10, 10);
+        opacity: 1;
+      }
+    }
+  }
+  
+  .gallery .img-container:hover {
+    animation: slide-animation 2s ease infinite;
+  }
+  
